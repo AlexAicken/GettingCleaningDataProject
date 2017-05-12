@@ -53,4 +53,4 @@ tidySummary <- aggregate(namedSelectDataSet[,3:68], list(SubjectID=namedSelectDa
 
 #produce summary text file
 tidySummary <- tidySummary[order(tidySummary$SubjectID),]
-write.table(namedSelectDataSet, file="tidySummary.txt", row.name=FALSE)
+write.table(tidySummary, file="tidySummary.txt", row.name=FALSE)
